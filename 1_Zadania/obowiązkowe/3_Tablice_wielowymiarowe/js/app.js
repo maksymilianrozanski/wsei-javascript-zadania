@@ -40,3 +40,12 @@ console.log(checkArray(arr));
 console.log(task1Array[3][2]);
 console.log(task1Array[1].length);
 console.log(task1Array[4][2]);
+
+//Zadanie 2
+task2Array[0].forEach(it => {
+    console.log(it)
+});
+
+//TODO: W pętli wypisz długość tablic składających się na 2gi wymiar.
+
+task2Array.forEach(it => it.forEach(it2 => console.log(it2)));
