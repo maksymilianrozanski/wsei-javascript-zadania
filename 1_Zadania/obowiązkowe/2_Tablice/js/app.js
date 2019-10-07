@@ -60,3 +60,25 @@ function multiply(array) {
 console.log(multiply([1, 2, 3, 4, 5, 6, 7]));
 console.log(multiply([1, 1, 1, 1]));
 console.log(multiply([2, 8, 3, 7]));
+
+//Zadanie 5
+function getEvenAverage(array) {
+    let sum = 0;
+    let counter = 0;
+
+    array.forEach(
+        it => {
+            if (it % 2 === 0) {
+                sum += it;
+                counter++;
+            }
+        }
+    );
+
+    if (counter === 0) return null;
+    return sum / counter;
+}
+
+console.log(getEvenAverage([1, 2, 3, 4, 5, 6, 7]));
+console.log(getEvenAverage([1, 1, 1, 1]));
+console.log(getEvenAverage([2, 8, 3, 7, 4]));
