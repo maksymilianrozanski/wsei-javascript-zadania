@@ -91,3 +91,30 @@ function sortArray(array) {
 }
 
 console.log(sortArray([145, 11, 3, 64, 4, 6, 10]));
+
+//Zadanie 7
+function addArrays(array1, array2) {
+    let longerArray;
+    let shorterArray;
+    if (array1.length > array2.length) {
+        longerArray = array1;
+        shorterArray = array2
+    } else {
+        longerArray = array2;
+        shorterArray = array1
+    }
+
+    for (let i = 0; i < longerArray.length; i++) {
+        let shorterArrayValue = shorterArray[i];
+        if (shorterArrayValue === undefined) {
+            break;
+        }
+        longerArray[i] = longerArray[i] + shorterArrayValue;
+    }
+
+    return longerArray;
+}
+
+console.log(addArrays([4, 0, 1, 3, 4], [1, 9, 6, 7, 8, 17]));
+console.log(addArrays([8, 3, 22], [1, 3, 2]));
+console.log(addArrays([2, 3, 1, 5, 3, 5], [3, 1, 76, 1]));
