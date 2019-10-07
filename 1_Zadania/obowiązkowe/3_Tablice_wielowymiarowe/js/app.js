@@ -58,3 +58,19 @@ function print2DArray(array2d) {
 //Zadanie 4
 let array2dZad3 = [[1, 2], [3, 4]];
 print2DArray(array2dZad3);
+
+//Zadanie 5
+function create2DArray(rows, columns) {
+    let number = 1;
+    let result = [];
+    for (let row = 0; row < rows; row++) {
+        result[row] = [];
+        for (let column = 0; column < columns; column++) {
+            result[row][column] = number;
+            number++;
+        }
+    }
+    return result
+}
+
+console.log(create2DArray(4, 4));
