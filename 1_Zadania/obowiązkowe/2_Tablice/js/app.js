@@ -47,3 +47,16 @@ function printTable(array) {
 }
 
 printTable(array);
+
+//Zadanie 4
+function multiply(array) {
+    let result = array[0];
+    for (let i = 1; i < array.length; i++) {
+        result = result * array[i];
+    }
+    return result;
+}
+
+console.log(multiply([1, 2, 3, 4, 5, 6, 7]));
+console.log(multiply([1, 1, 1, 1]));
+console.log(multiply([2, 8, 3, 7]));
