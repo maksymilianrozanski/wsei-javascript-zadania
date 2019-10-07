@@ -36,3 +36,14 @@ function fruits(fruits) {
 }
 
 fruits(fruitsArray);
+
+//Zadanie 3
+const array = [1, 2, 3, 4];
+
+function printTable(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+}
+
+printTable(array);
