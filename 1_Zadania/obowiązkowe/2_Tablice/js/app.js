@@ -82,3 +82,12 @@ function getEvenAverage(array) {
 console.log(getEvenAverage([1, 2, 3, 4, 5, 6, 7]));
 console.log(getEvenAverage([1, 1, 1, 1]));
 console.log(getEvenAverage([2, 8, 3, 7, 4]));
+
+//Zadanie 6
+function sortArray(array) {
+    return array.sort(function (a, b) {
+        return a > b
+    })
+}
+
+console.log(sortArray([145, 11, 3, 64, 4, 6, 10]));
