@@ -49,3 +49,12 @@ task2Array[0].forEach(it => {
 //TODO: W pętli wypisz długość tablic składających się na 2gi wymiar.
 
 task2Array.forEach(it => it.forEach(it2 => console.log(it2)));
+
+//Zadanie 3
+function print2DArray(array2d) {
+    array2d.forEach(it => it.forEach(it2 => console.log(it2)));
+}
+
+//Zadanie 4
+let array2dZad3 = [[1, 2], [3, 4]];
+print2DArray(array2dZad3);
