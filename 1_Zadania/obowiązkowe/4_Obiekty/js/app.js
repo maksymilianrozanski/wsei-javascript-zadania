@@ -42,3 +42,13 @@ person.sayHello = function () {
 console.log(person.name);
 console.log(person.age);
 person.sayHello();
+
+//Zadanie 3
+let coffee = {};
+coffee.title = "Flat White";
+coffee.servings = 2;
+coffee.ingredients = ["Water", "Coffee", "Milk"];
+
+console.log(coffee.title);
+console.log(coffee.servings);
+coffee.ingredients.forEach(it => console.log(it));
