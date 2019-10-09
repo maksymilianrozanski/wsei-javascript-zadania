@@ -30,3 +30,15 @@ book.numberOfPages = 140;
 console.log(book.title);
 console.log(book.author);
 console.log(book.numberOfPages);
+
+//Zadanie 2
+let person = {};
+person.name = "imię";
+person.age = 100;
+person.sayHello = function () {
+    console.log("hello")
+};
+
+console.log(person.name);
+console.log(person.age);
+person.sayHello();
