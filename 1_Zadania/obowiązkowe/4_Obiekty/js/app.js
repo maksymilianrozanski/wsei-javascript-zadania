@@ -15,9 +15,18 @@ let timeMachine = {};
 timeMachine.shape = "triangle";
 timeMachine.model = "x27";
 timeMachine.run = function (date, place) {
-console.log("Moving to "+ place + " in " + date);
+    console.log("Moving to " + place + " in " + date);
 };
 
 console.log(timeMachine.shape);
 console.log(timeMachine.model);
 timeMachine.run("2030-02-02", "WSEI");
+
+//Zadanie 1
+let book = {};
+book.title = "Tytuł";
+book.author = "Autor";
+book.numberOfPages = 140;
+console.log(book.title);
+console.log(book.author);
+console.log(book.numberOfPages);
