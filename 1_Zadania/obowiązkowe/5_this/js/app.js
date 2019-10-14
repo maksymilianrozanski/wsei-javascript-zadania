@@ -26,3 +26,5 @@ car.getDates = function () {
 
 car.addDate("2019-02-02");
 console.log(car.getDates());
+
+//Zadanie 2
