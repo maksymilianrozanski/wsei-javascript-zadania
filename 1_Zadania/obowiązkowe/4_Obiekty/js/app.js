@@ -119,3 +119,14 @@ for (let i = 0; i < animals.length; i++) {
     }
     console.log(" ")
 }
+
+//Zadanie 6
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist  = false;
+
+//Nie
+console.log(spoon.isExist);
