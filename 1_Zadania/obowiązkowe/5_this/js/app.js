@@ -14,3 +14,15 @@ let car = {
 console.log(car.printCarInfo());
 car.drive(20);
 console.log(car.printCarInfo());
+
+//Zadanie 1
+car.dates = [];
+car.addDate = function (date) {
+    this.dates.push(date);
+};
+car.getDates = function () {
+    return this.dates;
+};
+
+car.addDate("2019-02-02");
+console.log(car.getDates());
