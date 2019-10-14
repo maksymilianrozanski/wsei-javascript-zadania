@@ -27,4 +27,22 @@ car.getDates = function () {
 car.addDate("2019-02-02");
 console.log(car.getDates());
 
-//Zadanie 2
+//Zadanie 3
+let stairs = {
+    step: 0,
+    up: function () {
+        this.step += 1;
+    },
+    down: function () {
+        this.step -= 1;
+    },
+    printStep: function () {
+        console.log(this.step)
+    }
+};
+
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down();
+stairs.printStep(); // 2
