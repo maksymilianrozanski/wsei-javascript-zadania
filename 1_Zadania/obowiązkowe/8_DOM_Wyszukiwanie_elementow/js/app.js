@@ -34,4 +34,31 @@ document.addEventListener("DOMContentLoaded", function () {
     let firstBlock = document.getElementsByClassName("block")[0];
     console.log(firstBlock);
 
+    //Zadanie 2
+    let allNavElements = document.getElementsByTagName("nav");
+    console.log(allNavElements);
+    console.log("Number of nav elements: " + allNavElements.length);
+
+    let pElements = document.getElementsByTagName("p");
+    console.log(pElements);
+    console.log("Number of p elements: " + pElements.length);
+
+    let articleElements = document.getElementsByTagName("article");
+    let isDiv = function (element) {
+        return element.tagName === 'DIV'
+    };
+
+    let articleElementsChildren = [];
+    Array.from(articleElements).forEach(articleElement => {
+        Array.from(articleElement.childNodes).forEach(it => {
+            articleElementsChildren.push(it)
+        });
+    });
+
+    let divElements = articleElementsChildren.filter(
+        isDiv
+    );
+    console.log(divElements);
+    console.log("Number of div elements inside article tag elements: " + divElements.length);
+
 });
