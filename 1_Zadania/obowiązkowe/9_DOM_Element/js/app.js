@@ -60,4 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log(getTags(childElements));
+
+    //Zadanie 5
+    function getClassInfo(element) {
+        let result = [];
+        Array.from(element.children).forEach(it => result.push(it.className));
+        return result;
+    }
+
+    getClassInfo(banner).forEach(it => console.log(it));
 });
