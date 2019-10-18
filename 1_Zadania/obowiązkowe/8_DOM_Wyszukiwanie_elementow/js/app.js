@@ -61,4 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(divElements);
     console.log("Number of div elements inside article tag elements: " + divElements.length);
 
+
+    //Zadanie 3
+    let firstArticle = document.getElementsByClassName("first");
+    //TODO: wypisz w konsoli, ile elementów h1 znajduje się w tym tagu
+    console.log("Liczba elmentów h1: 0?");
 });
