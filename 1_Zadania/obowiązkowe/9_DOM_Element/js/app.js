@@ -52,4 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log(getId(mainFooter));
 
+    //Zadanie 4
+    function getTags(elements) {
+        let result = [];
+        Array.from(elements).forEach(it => result.push(it.tagName));
+        return result;
+    }
+
+    console.log(getTags(childElements));
 });
