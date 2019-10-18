@@ -69,4 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     getClassInfo(banner).forEach(it => console.log(it));
+
+    //Zadanie 6
+    let navElement = document.getElementsByTagName("NAV");
+    let listItems = navElement[0].childNodes[1].childNodes;
+
+    function setDataDirection(elements) {
+        Array.from(elements).forEach(element => {
+            let attributes = element.attributes;
+            if (attributes !== undefined && attributes.getNamedItem("data-direction") !== null) {
+                attributes.getNamedItem("data-direction").value = "top";
+            }
+        })
+    }
+
+    setDataDirection(listItems);
 });
