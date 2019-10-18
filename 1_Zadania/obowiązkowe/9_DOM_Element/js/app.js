@@ -43,4 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
     Array.from(blocks).forEach(it => it.innerHTML = "Nowa wartość diva o klasie blocks");
     //Zmiana wartości innerHTML zmienia wyświetlane elementy/tekst
 
+    //Zadanie 3
+    let mainFooter = document.getElementById("mainFooter");
+
+    function getId(element) {
+        return element.id;
+    }
+
+    console.log(getId(mainFooter));
+
 });
