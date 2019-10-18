@@ -35,4 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     elementsArray.forEach(element => {
         console.log("tagName: " + element.tagName + " className: " + element.className)
     });
+
+    //Zadanie 2
+    Array.from(blocks).forEach(it => console.log(it.innerHTML));
+    Array.from(blocks).forEach(it => console.log(it.outerHTML));
+    //innerHTML zwraca tylko zawartość wewnątrz tagu, outerHTML zwraca tag wraz z zawartością
+    Array.from(blocks).forEach(it => it.innerHTML = "Nowa wartość diva o klasie blocks");
+    //Zmiana wartości innerHTML zmienia wyświetlane elementy/tekst
+
 });
