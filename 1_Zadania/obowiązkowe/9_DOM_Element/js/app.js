@@ -19,4 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let result = getDatasInfo(links);
+
+    //Zadanie 1
+    console.log(homeElement);
+    console.log(childElements);
+    console.log(banner);
+    console.log(blocks);
+    console.log(links);
+
+    Array.from(childElements).forEach(console.log);
+    Array.from(blocks).forEach(console.log);
+    Array.from(links).forEach(console.log);
+
+    let elementsArray = [homeElement, childElements, banner, blocks, links];
+    elementsArray.forEach(element => {
+        console.log("tagName: " + element.tagName + " className: " + element.className)
+    });
 });
