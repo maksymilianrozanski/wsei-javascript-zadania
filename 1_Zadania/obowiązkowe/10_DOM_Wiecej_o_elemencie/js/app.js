@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         it.className = it.className.trim()
     });
 
-
     //Zadanie 4
     let ex4 = document.getElementsByClassName("exercise ex4");
     let ex4ListItems = ex4[0].getElementsByTagName("li");
