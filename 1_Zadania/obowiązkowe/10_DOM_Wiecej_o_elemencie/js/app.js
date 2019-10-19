@@ -41,4 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let firefoxAnchor = firefoxParent.getElementsByTagName("a");
     firefoxAnchor[0].innerHTML = "Firefox";
     firefoxAnchor[0].href = "https://www.mozilla.org/en-US/firefox/new/";
+
+    //Zadanie 2
+    let name = document.getElementById("name");
+    name.innerHTML = "Maksymilian";
+    let favColor = document.getElementById("fav_color");
+    favColor.innerHTML = "White";
+    let favMeal = document.getElementById("fav_meal");
+    favMeal.innerHTML = "Burger";
+
 });
