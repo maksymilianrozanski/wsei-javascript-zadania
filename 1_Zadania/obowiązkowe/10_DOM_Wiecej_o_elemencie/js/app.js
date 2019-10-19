@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (elementNumber % 2 === 0) {
             it.style.backgroundColor = "green";
         }
-        if (elementNumber % 5 === 0){
+        if (elementNumber % 5 === 0) {
             it.className = "big"
         }
-        if (elementNumber % 3 ===0){
+        if (elementNumber % 3 === 0) {
             it.style.textDecoration = "underline";
         }
         elementNumber++;
@@ -49,5 +49,16 @@ document.addEventListener("DOMContentLoaded", function () {
     favColor.innerHTML = "White";
     let favMeal = document.getElementById("fav_meal");
     favMeal.innerHTML = "Burger";
+
+    //Zadanie 3
+    let ex3 = document.getElementsByClassName("exercise ex3");
+    let unorderedList = ex3[0].getElementsByTagName("ul");
+    unorderedList[0].className = "menu";
+    let ex3ListItems = ex3[0].getElementsByTagName("li");
+    Array.from(ex3ListItems).forEach(it => {
+        if (it.className.search("menuElement") === -1) it.className += " menuElement";
+        it.className = it.className.replace("error", "");
+        it.className = it.className.trim()
+    });
 
 });
