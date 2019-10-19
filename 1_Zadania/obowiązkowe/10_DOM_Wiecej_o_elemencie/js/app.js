@@ -61,4 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
         it.className = it.className.trim()
     });
 
+
+    //Zadanie 4
+    let ex4 = document.getElementsByClassName("exercise ex4");
+    let ex4ListItems = ex4[0].getElementsByTagName("li");
+    let startNumber = 1;
+    Array.from(ex4ListItems).forEach(it => {
+        it.dataset["id"] = startNumber;
+        startNumber++;
+    });
+
 });
