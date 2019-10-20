@@ -46,8 +46,9 @@ task2Array[0].forEach(it => {
     console.log(it)
 });
 
-//TODO: W pętli wypisz długość tablic składających się na 2gi wymiar.
-
+//W pętli wypisz długość tablic składających się na 2gi wymiar.
+task2Array.forEach(it => console.log(it.length));
+//W pętli wypisz wszystkie elementy tablicy 2 wymiarowej (musisz użyć do tego zagnieżdżonej pętli for)
 task2Array.forEach(it => it.forEach(it2 => console.log(it2)));
 
 //Zadanie 3
