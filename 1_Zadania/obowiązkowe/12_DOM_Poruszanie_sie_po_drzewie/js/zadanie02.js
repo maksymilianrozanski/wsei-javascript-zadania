@@ -7,7 +7,6 @@ EventTarget.prototype.changeColor = function () {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("hi");
     document.body.addEventListener("click", (ev) => {
         ev.target.changeColor()
     })
