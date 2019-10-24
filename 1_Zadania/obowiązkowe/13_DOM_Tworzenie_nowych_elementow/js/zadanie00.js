@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let buttons = document.getElementsByClassName("deleteBtn");
-    Array.from(buttons).forEach(
-        button => {
-            button.addEventListener("click", (ev => {
-                let table = button.parentElement.parentElement.parentElement;
-                let currentRow = button.parentElement.parentElement.rowIndex;
-                table.deleteRow(currentRow);
-            }));
+
+    let table = document.getElementById("orders");
+    table.addEventListener("click", (ev) => {
+        if (ev.target.className === "deleteBtn") {
+            let table = ev.target.parentElement.parentElement.parentElement;
+            let currentRow = ev.target.parentElement.parentElement.rowIndex;
+            table.deleteRow(currentRow);
         }
-    )
+    })
 });
