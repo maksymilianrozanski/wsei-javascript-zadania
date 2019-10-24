@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Array.from(document.getElementsByClassName("parent"))
         .forEach(div => {
-            div.addEventListener("mouseover", showChildren);
-            div.addEventListener("mouseout", hideChildren)
+            div.addEventListener("mouseover", showChildrenElement);
+            div.addEventListener("mouseout", hideChildrenElement)
         });
 
-    function showChildren() {
+    function showChildrenElement() {
         this.children[0].style.display = "block";
     }
 
-    function hideChildren() {
+    function hideChildrenElement() {
         this.children[0].style.display = "none"
     }
 });
