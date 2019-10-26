@@ -1,3 +1,11 @@
+//Zadanie 1
+function getNumber(number, array) {
+    return array.includes(number)
+}
+
+console.log(getNumber(2, [33, 54, 2, 1, 4, 100]));
+console.log(getNumber(5, [33, 54, 2, 1, 4, 100]));
+
 //Zadanie 1 - dodatkowe
 
 function addTheSameNumbers(number, array) {
