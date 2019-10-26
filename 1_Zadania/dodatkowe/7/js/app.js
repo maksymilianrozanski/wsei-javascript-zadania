@@ -40,3 +40,20 @@ console.log(addTheSameNumbers(7, [4, 7, 24, 7, 0, 10]));
 console.log(addTheSameNumbers(9, [33, 54, 2, 1, 9, 100]));
 console.log(addTheSameNumbers(0, [33, 0, 2, 0, 9, 0]));
 console.log(addTheSameNumbers(43, [6, 0, 2, 2, 3, 46]));
+
+//Zadanie 2 - dodatkowe
+
+function factors(number) {
+    let result = [];
+    if (number <= 0) return result;
+    for (let i = number; i > 0; i--) {
+        if (number % i === 0) {
+            result.push(i)
+        }
+    }
+    return result;
+}
+
+console.log(factors(2));
+console.log(factors(54));
+console.log(factors(-4));
