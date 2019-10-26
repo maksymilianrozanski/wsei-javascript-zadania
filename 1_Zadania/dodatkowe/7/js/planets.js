@@ -32,3 +32,12 @@ var planets = [
         numberOfMoons: 13
     }
 ];
+
+// Zadanie 3
+function sortPlanet(planets) {
+    return planets.sort((b, a) => {
+        return a.numberOfMoons - b.numberOfMoons
+    })
+}
+
+console.log(sortPlanet(planets));
