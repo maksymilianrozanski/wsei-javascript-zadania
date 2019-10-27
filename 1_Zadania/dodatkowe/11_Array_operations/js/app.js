@@ -29,5 +29,18 @@ document.addEventListener('DOMContentLoaded', function (callbackfn) {
 
     //Zadanie 2
     let animals = ["cat", "shrimp", "giraffe"];
-    animals.forEach(it => console.log(it))
+    animals.forEach(it => console.log(it));
+
+    //Zadanie 3
+    function currentYear() {
+        let date = new Date();
+        return date.getFullYear()
+    }
+
+    let years = [1995, 1856, 2014, 1987];
+    let ages = years.reduce((accumulator, current) => {
+        accumulator.push(currentYear() - current);
+        return accumulator
+    }, []);
+    console.log(ages)
 });
