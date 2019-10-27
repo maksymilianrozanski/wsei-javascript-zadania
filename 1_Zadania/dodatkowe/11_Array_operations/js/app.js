@@ -13,4 +13,17 @@ document.addEventListener('DOMContentLoaded', function (callbackfn) {
     }, []);
     console.log(nameLengths);
 
+    //Zadanie 1
+    function randomize(param1, param2, callback) {
+        if (callback instanceof Function) {
+            let randomValue = (param2 - param1) * Math.random();
+            return callback(randomValue)
+        }
+    }
+
+    function print(number) {
+        console.log(number)
+    }
+
+    randomize(20, 100, print)
 });
