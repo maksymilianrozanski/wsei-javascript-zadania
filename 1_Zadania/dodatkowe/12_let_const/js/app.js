@@ -1,3 +1,23 @@
+//Zadanie 3
+//Zmienne nazwane inaczej, aby uniknąc konfliktu z instniejącymi zmiennymi
+
+for (var i2 = 0; i2 < 10; i2++) {
+    console.log(i2)
+}
+
+console.log("");
+//wypisana jest wartość 10, wartość w pętli jest powiększana po każdym wykonaniu
+console.log(i2);
+console.log("");
+
+for (let j = 0; j < 10; j++) {
+    console.log(j)
+}
+
+//console.log(j);    ReferenceError: j is not defined. W tym miejscu nie ma dostępu do zmiennej let
+//zadeklarowanej wewnątrz pętli
+
+//w pliku index.html jest odniesienie do zadanie01.js, poniższy kod nie działa poprawnie
 document.addEventListener('DOMContentLoaded', function () {
 
     const x = 5;
@@ -15,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     }
+
     myFn(i)
 
     console.log(x);
