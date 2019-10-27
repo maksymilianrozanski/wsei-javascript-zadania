@@ -57,3 +57,18 @@ function factors(number) {
 console.log(factors(2));
 console.log(factors(54));
 console.log(factors(-4));
+
+//Zadanie 3 - dodatkowe
+function getMissingElement(array) {
+    let missingValue =
+        array.find((element, index) => {
+            if (array[index + 1] - element > 1) return element;
+        }) + 1;
+    if (isNaN(missingValue)) {
+        return null
+    } else return missingValue;
+}
+
+console.log(getMissingElement([1, 2, 3, 4, 5, 6, 7]));
+console.log(getMissingElement([6, 7, 8, 10, 11, 12, 13, 14, 15]));
+console.log(getMissingElement([-4, -3, -2, 0, 1, 2, 3, 4]));
