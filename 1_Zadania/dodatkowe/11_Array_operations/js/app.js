@@ -42,5 +42,24 @@ document.addEventListener('DOMContentLoaded', function (callbackfn) {
         accumulator.push(currentYear() - current);
         return accumulator
     }, []);
-    console.log(ages)
+    console.log(ages);
+
+    //Zadanie 4
+    function sumOfElements(array) {
+        return array.reduce((accumulator, current) => {
+            accumulator += current;
+            return accumulator
+        })
+    }
+
+    function multiplicationOfElements(array) {
+        return array.reduce((accumulator, current) => {
+            accumulator *= current;
+            return accumulator
+        })
+    }
+
+    let myNumbers = [1, 2, 3, 4];
+    console.log(sumOfElements(myNumbers));
+    console.log(multiplicationOfElements(myNumbers))
 });
