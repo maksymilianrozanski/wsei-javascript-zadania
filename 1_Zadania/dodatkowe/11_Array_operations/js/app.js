@@ -25,5 +25,9 @@ document.addEventListener('DOMContentLoaded', function (callbackfn) {
         console.log(number)
     }
 
-    randomize(20, 100, print)
+    randomize(20, 100, print);
+
+    //Zadanie 2
+    let animals = ["cat", "shrimp", "giraffe"];
+    animals.forEach(it => console.log(it))
 });
