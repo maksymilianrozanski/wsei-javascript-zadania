@@ -29,3 +29,8 @@ console.log(multiplyByTwo());
 const maxOf = (number1, number2) => Math.max(number1, number2);
 console.log(maxOf(2, 3));
 console.log(maxOf(3, 2));
+
+//Zadanie 4
+var arr1 = [2, 3, 1, 6, 100, 49, 5, 7, 8, 9];
+const getSecondMaxNumber = (array) => array.sort((a, b) => a - b)[array.length - 2];
+console.log(getSecondMaxNumber(arr1));
