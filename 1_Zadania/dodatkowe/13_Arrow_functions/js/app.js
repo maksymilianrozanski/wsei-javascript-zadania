@@ -24,3 +24,8 @@ helloWorld();
 const multiplyByTwo = (number) => typeof number !== "undefined" ? number * 2 : 1;
 console.log(multiplyByTwo(3));
 console.log(multiplyByTwo());
+
+//Zadanie 3
+const maxOf = (number1, number2) => Math.max(number1, number2);
+console.log(maxOf(2, 3));
+console.log(maxOf(3, 2));
