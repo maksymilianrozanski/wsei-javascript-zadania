@@ -45,3 +45,14 @@ function getElementAlt(imageElements) {
 }
 
 console.log(getElementAlt(imageElements));
+
+//2.5
+let myLinkElements = document.getElementsByClassName('my-link');
+
+function getElementHref(myLinkElements) {
+    let hrefs = [];
+    Array.from(myLinkElements).forEach(it => hrefs.push(it.href));
+    return hrefs;
+}
+
+console.log(getElementHref(myLinkElements));
