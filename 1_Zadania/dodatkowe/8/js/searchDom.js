@@ -26,3 +26,11 @@ function getElementClass(element) {
 
 console.log(getElementClass(mainContener));
 
+//2.3
+let pinkColor = document.getElementsByClassName('pink-color')[0];
+
+function getElementText(element) {
+    return element.innerText;
+}
+
+console.log(getElementText(pinkColor));
