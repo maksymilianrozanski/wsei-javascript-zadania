@@ -34,3 +34,14 @@ function getElementText(element) {
 }
 
 console.log(getElementText(pinkColor));
+
+//2.4
+let imageElements = document.getElementsByClassName('images');
+
+function getElementAlt(imageElements) {
+    let elements = [];
+    Array.from(imageElements).forEach(img => elements.push(img.alt));
+    return elements;
+}
+
+console.log(getElementAlt(imageElements));
