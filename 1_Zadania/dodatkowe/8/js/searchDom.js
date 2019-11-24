@@ -12,3 +12,17 @@ function getDataInfo(element) {
 }
 
 getDataInfo(menuElement).forEach(it => console.log(it));
+
+//2.2
+let mainContener = document.getElementById('main-contener');
+
+function getElementClass(element) {
+    return Array.from(element.classList).reduce((accumulator, it) => {
+            accumulator.push(it);
+            return accumulator;
+        }, []
+    )
+}
+
+console.log(getElementClass(mainContener));
+
