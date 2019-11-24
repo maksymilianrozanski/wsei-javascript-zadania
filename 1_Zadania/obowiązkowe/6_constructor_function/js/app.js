@@ -2,15 +2,17 @@
 function Basket() {
     this.products = [];
     this.sum = 0;
-    this.addProduct = function (name, price) {
-        this.products.push(name);
-        this.sum += price;
-    };
-    this.showBasket = function () {
-        console.log("Products: ");
-        console.log(this.products);
-        console.log("Sum: " + this.sum)
-    }
+}
+
+Basket.prototype.addProduct = function(name1, price1){
+    this.products.push({name:name1, price:price1});
+    this.sum += price1
+}
+
+Basket.prototype.showBasket = function () {
+    console.log("Products: ");
+    console.log(this.products);
+    console.log("Sum: " + this.sum)
 }
 
 var aliceBasket = new Basket();
