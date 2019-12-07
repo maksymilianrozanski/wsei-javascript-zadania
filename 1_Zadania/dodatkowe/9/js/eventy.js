@@ -5,4 +5,8 @@ window.addEventListener("DOMContentLoaded", () => {
         this.nextElementSibling.style.display = "block";
     });
     
+    anchors[1].addEventListener("mouseenter", function() {
+        this.nextElementSibling.style.display = "block";
+    });
+    
 });
