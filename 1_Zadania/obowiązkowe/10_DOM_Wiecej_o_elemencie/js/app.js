@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             it.style.backgroundColor = "green";
         }
         if (elementNumber % 5 === 0) {
-            it.className = "big"
+            it.classList.add("big");
         }
         if (elementNumber % 3 === 0) {
             it.style.textDecoration = "underline";
