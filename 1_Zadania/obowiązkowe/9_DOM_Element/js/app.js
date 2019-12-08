@@ -64,11 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
     //Zadanie 5
     function getClassInfo(element) {
         let result = [];
-        Array.from(element.children).forEach(it => result.push(it.className));
+        Array.from(element.classList).forEach(it => {
+        result.push(it)
+        });
         return result;
     }
-
+    
     getClassInfo(banner).forEach(it => console.log(it));
+    
 
     //Zadanie 6
     let navElement = document.getElementsByTagName("NAV");
