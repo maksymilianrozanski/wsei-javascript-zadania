@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Zadanie 2
     let name = document.getElementById("name");
-    name.innerHTML = "Maksymilian";
+    name.innerHTML = "Maksymilian Różański";
     let favColor = document.getElementById("fav_color");
     favColor.innerHTML = "White";
     let favMeal = document.getElementById("fav_meal");
