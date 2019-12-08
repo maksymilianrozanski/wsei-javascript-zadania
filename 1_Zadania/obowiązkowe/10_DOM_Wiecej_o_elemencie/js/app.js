@@ -25,9 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let ex1 = document.getElementsByClassName("exercise ex1");
     let chromeElement = ex1[0].getElementsByClassName("chrome");
     chromeElement[0].style.width = "100px";
-    let chromeParent = chromeElement[0].parentNode;
-    let chromeAnchor = chromeParent.getElementsByTagName("a");
-    chromeAnchor[0].innerHTML = "Chrome";
+    let chromeAnchor = chromeElement[0].nextElementSibling;
+    chromeAnchor.innerHTML = "Chrome";
 
     let edgeElement = ex1[0].getElementsByClassName("edge");
     edgeElement[0].style.backgroundImage = "url(assets/img/edge.png)";
