@@ -16,3 +16,10 @@ let name = "Maksymilian";
 let nameArray = [...name];
 
 console.log(nameArray);
+
+//Zadanie 2
+let fruits = ["apple", "orange"];
+let vegetables = ["carrot"];
+
+let mix = [...fruits, ...vegetables];
+console.log(mix);
