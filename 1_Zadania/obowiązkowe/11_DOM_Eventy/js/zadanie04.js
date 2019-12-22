@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.addEventListener("click", (element) => {
-        if (element.target.id === 'button1' ||
-            element.target.id === 'button2' ||
-            element.target.id === 'button3') {
+      let buttons = document.querySelectorAll("button")
+      buttons.forEach(it => it.addEventListener("click", () => {
             let currentSpan = document.getElementsByClassName("counter")[0];
-            currentSpan.innerHTML = parseInt(currentSpan.innerHTML) + 1;
-        }
-    }, false);
+            currentSpan.innerHTML = parseInt(currentSpan.innerHTML) + 1;  
+      }));
 });
